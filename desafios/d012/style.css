@@ -1,21 +1,33 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto+Mono:wght@100&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Roboto Mono', monospace;
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
-html, bady{
+html, body{
     background-color: darkgray;
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
+
 }
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vw;
 }
 header > p{
     padding-bottom: 50px;
@@ -32,6 +44,9 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-weight: bolder;
+    font-size: 2.7vw;
 }
 section.normal{
     background-color: white;
